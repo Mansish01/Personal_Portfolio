@@ -1,0 +1,103 @@
+.heading-edu{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0 0 60px;
+}
+.heading-edu span{
+    color: rgb(70, 69, 136);
+}
+
+.education-section{
+    background: url(images/college-graduation.jpg) no-repeat;
+    min-height: 100vh;
+    padding: 0px 20px;
+}
+
+.education-items{
+    max-width: 1000px;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.education-items::before{
+    content:' ';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    left: calc(50% - 1px);
+}
+
+.education-items:last-child{
+    margin-bottom: 0px;
+}
+
+.education-lvl{
+    /* background-color: blueviolet; */
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.education-lvl:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.education-lvl:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.edu-content{
+    background-color:#fff;
+    padding: 30px;
+    border-radius: 8px;
+
+
+}
+
+.dot{
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.date{
+    font-size: 16px;
+    color: white;
+    margin: 10px 0px 10px;
+}
+
+.edu-content h3{
+    font-size: 23px;
+    color: rgb(70, 69, 136);
+    margin:0 0 15px;
+    text-decoration:underline;
+}
+
+.edu-content p{
+    color:  rgb(70, 69, 136) ;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.heading-project{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 160px 0 60px;
+}
+
+.heading-project span{
+    color: rgb(70, 69, 136);
+}
