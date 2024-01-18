@@ -1,0 +1,161 @@
+.contact-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+    padding-left: 30px;
+    margin-top: 260px;
+}
+
+.contact h2{
+    font-size: 70px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.contact h2 span{
+    color:  rgb(70, 69, 136);
+}
+
+.contact h4{
+    margin: 15px 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact p{
+    color: rgb(70, 69, 136);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contact-access{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-access li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-access i{
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* .contact-access li a baki xa hai */
+
+.contact-here i{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideL 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+
+.contact-here i:hover{
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-input form{
+    position: relative;
+
+}
+
+.contact-input form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 13px;
+    background: #555557;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    border-radius: 10px;
+
+
+}
+
+.contact-input textarea{
+    resize: none;
+    height: 200px;
+
+}
+
+.contact-input form .submit.btn{
+    display: inline-block;
+    padding:  12px 28px;
+    background: #0ef;
+
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0;
+    animation : slideTop 1s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 10px white;
+}
+
+.contact-input form .submit.btn:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+    background: rgb(70, 69, 136);
+    font-weight: 300;
+    margin-top: 60px;
+}
+
+.tothetop{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+
+}
+
+.tothetop i{
+    color: white;
+    background: black;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylehome.css">
     <link rel="stylesheet" href="styleone.css">
     <link rel="stylesheet" href="styletwo.css">
+    <link rel="stylesheet" href="stylethree.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
@@ -17,17 +18,18 @@
         </a>
 
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skill</a>
-            <a href="#">Education</a> 
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a> 
+            <!-- based on id name href is given not class name -->
+            <a href="#about">About</a>
+            <a href="#skill-section">Skill</a>
+            <a href="#education-section">Education</a> 
+            <a href="#project-section">Projects</a>
+            <a href="#contact-section">Contact</a>
 
         </nav>
 
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Manish Gyawali</h1>
@@ -57,7 +59,7 @@
         </div>  
     </section>
 
-    <section  class="about">
+    <section  class="about" id="about">
         <div class="about-img">
             <img src="images/naturelake.jpg" alt="about-img">
         </div>
@@ -88,7 +90,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
            <div class="container">
                 <h1 class="title-heading">My <span>Services</span></h1>
                 <div class="services-list">
@@ -127,7 +129,7 @@
     </section>
     <h1 class="title-heading" style="margin-top: 80px">My <span>Skills</span></h1>
 
-    <section class="skill-section">
+    <section class="skill-section" id="skill-section">
         <div class="container1" id="skills"> 
             <h1 class="heading" >Technical Skills</h1>
             <div class="technical-skills">
@@ -197,7 +199,7 @@
 
     <h1 class="heading-edu">My <span>Education</span></h1>
     
-    <section class="education-section">
+    <section class="education-section" id=education-section>
         <div class="education-items">
             <div class="education-lvl">
                 <div class="dot"></div>  
@@ -262,6 +264,109 @@
     </section>  
 
     <h1 class="heading-project">My <span>Projects</span></h1>
+
+    <section class="project-section" id="project-section">
+        <div class="project-header">
+            <h2>Latest<span>Project</span></h2>
+            <div class="project-content">
+
+                <div class="row">
+                    <img src="images/1681150393259.jpeg" alt="project">
+                    <div class="row-content">
+                        <h5>UI Design</h5>
+                        <p>
+                            User Interface (UI) design is a critical
+                            aspect of creating digital products that
+                            provide a seamless and engaging user experience. 
+                            It involves the design of visual elements, 
+                            interactions, and overall layout to enhance 
+                            usability and aesthetic appeal</p>
+
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <img src="images/portfolio-website.png" alt="project">
+                    <div class="row-content">
+                        <h5>Web App</h5>
+                        <p>
+                            User Interface (UI) design is a critical
+                            aspect of creating digital products that
+                            provide a seamless and engaging user experience. 
+                            It involves the design of visual elements, 
+                            interactions, and overall layout to enhance 
+                            usability and aesthetic appeal</p>
+
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="images/webp.jpg" alt="project">
+                    <div class="row-content">
+                        <h5>TB Detection</h5>
+                        <p>
+                            User Interface (UI) design is a critical
+                            aspect of creating digital products that
+                            provide a seamless and engaging user experience. 
+                            It involves the design of visual elements, 
+                            interactions, and overall layout to enhance 
+                            usability and aesthetic appeal</p>
+
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <div class="contact">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+
+            <p>Design is a critical
+                aspect of creating digital products that
+                provide a seamless and engaging user experience. 
+                It involves the design of visual elements, 
+                interactions</p>
+            
+            <div class="contact-access">
+                <li><i class='bx bx-mail-send' ></i>manishgyawali@gmail.com</li>
+                <li><i class='bx bxs-phone-call' ></i>9842397932</li>
+            </div>
+
+            <div class="contact-here">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+
+            </div>
+        </div>
+        
+        <div class="contact-input">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Subject" >
+
+                <textarea name="" id="" cols="30" rows="10" 
+                    placeholder="Enter Your Message"></textarea>
+                
+                <input type="submit" value="submit" class="submit-btn">
+            </form>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <p>Developed By Manish Gyawali &copy 2023</p>
+    </div>
+
+    <a href="#" class="tothetop"><i class='bx bx-up-arrow-alt'></i></a>
 
 
 
