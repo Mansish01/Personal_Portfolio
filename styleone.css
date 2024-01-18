@@ -133,6 +133,7 @@
     font-weight: 600;
     animation: slideTop 1s ease forwards;
     animation-delay: .5s;
+    /* bottom: 5px; */
 }
 
 .learn-more:hover{
