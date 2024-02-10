@@ -1,0 +1,250 @@
+
+.about{
+    margin-top: 20px;
+}
+.about-img img{
+    
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow:  0 0 30px black;
+}
+
+.button-more{
+    text-decoration:none ;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    /* border: 2px solid #fff; */
+    border-color: white;
+    border-radius: 6%;
+}
+.button-more:hover{
+    color: black;
+    background: white;
+}
+
+.about{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 50% auto;
+    align-items: center;
+   
+}
+
+.about-img img{
+    margin-top: 0;
+    margin-left: 20%;
+
+}
+
+.about-description{
+    margin-top: 60px;
+}
+.about-description h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.about-description h2 span{
+    color:rgb(70, 69, 136);
+}
+
+.about-description h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(70, 69, 136);
+    margin-bottom: 15px;
+
+}
+.about-description p{
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+
+}
+.container{
+    padding: 40px;
+}
+.services{
+    color: aliceblue;
+    font-size: 20px;
+    margin-top:80px;
+
+}
+.title-heading{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.title-heading span{
+    color: rgb(70, 69, 136);
+}
+.services-list{
+    display: grid;
+    
+    grid-template-columns:repeat(3, 1fr);
+    gap: 0px 50px;
+    margin-top: 50px;
+    
+}
+.services-list div h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.services-list div i{
+    font-size: 35px;
+}
+
+.services-list div{
+    font-size: 19px;
+    padding: 40px;
+    font-weight: 500;
+    border-radius:20px;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255);
+       
+}
+
+.services-list div:hover{
+    transform: translateY(-10px);
+    transition: transform 0.6s ease; 
+    /* to apply the tranistion slower */
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: rgb(70, 69, 136) ;
+    margin-top: 15px;
+    display: inline-block;
+
+}
+
+.learn-more{
+    display: inline-block;
+    padding: 8px 14px;
+    background:#fff ;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+    /* bottom: 5px; */
+}
+
+.learn-more:hover{
+    background: black;
+    color: whitesmoke;
+    box-shadow: 1px 1px 20px rgb(216, 72, 72);
+}
+
+.title-heading{
+    margin-bottom: 25px;
+}
+
+.heading{
+    font-size: 35px;
+}
+.skill-section div h1{
+    
+   text-decoration:underline;
+   text-align: center;
+}
+
+.technical-skills{
+    padding: 30px 90px ;
+    margin-left: 300px;
+    width: 700px;
+    height: 800px;
+}
+
+.technical-skills .skill-bar .skill span{
+    font-size: 20px;
+    font-weight: 600;
+    animation: ShowText 0.5s 1s linear forwards;
+    /* opacity: 0; */
+}
+
+.technical-skills div i{
+    font-size: 25px;
+}
+
+.skill-bar{
+    width: 100%;
+    max-width: 600px;
+    padding:  20px 20px;
+
+}
+
+.skill{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+.bar {
+    height: 10px;
+    background: white;
+    border-radius: 3px;
+    
+}
+/* 
+.bar div{
+    height: 10px;
+    background:rgb(61, 4, 126) ;
+    border-radius: 3px;
+    position: relative;
+    animation: fillbar 2s ;
+} */
+
+.bar div::before{
+    content: attr(per);
+    position: absolute;
+    /* absolute vaneko yo positon dekhi apply following things */
+    padding: 2px 3px;
+    background:rgb(0, 0, 0) ;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -20px;
+    right: 0;
+    /* transform: translateX(50%); */
+}
+
+/* .bar div::after{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+
+} */
+
+@keyframes fillbar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+

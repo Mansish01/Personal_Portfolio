@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="styleone.css">
+    <link rel="stylesheet" href="styletwo.css">
+    <link rel="stylesheet" href="stylethree.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a> 
+            <!-- based on id name href is given not class name -->
+            <a href="#about">About</a>
+            <a href="#skill-section">Skill</a>
+            <a href="#education-section">Education</a> 
+            <a href="#project-section">Projects</a>
+            <a href="#contact-section">Contact</a>
+
+        </nav>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Manish Gyawali</h1>
+            <h3>And I'm a <span class="status"></span></h3>
+            
+                <p>
+                    with a relentless curiosity for technology and its applications.
+                    With hands-on experience in various programming languages and a keen interest
+                    in emerging technologies like machine learning, 
+                    I'm excited about the ever-evolving landscape of computer engineering.
+                </p>
+                <div class="home-links">
+                    <a href="https://www.facebook.com/manish.gyawali.39"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/manish_gyawali01/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/manish-gyawali-690366286/"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/Mansish01"><i class='bx bxl-github' ></i></a>
+
+                </div>
+                <div class="button-me">
+                    <a href="#">More About Me</a> 
+                    <!--a tag lai padding dina mildena, div vitra rakhera 
+                    matra padding dina milxa -->
+                </div>
+        </div>
+        <div class="sunset-section"></div>
+            <img src="images/logomanish.png" alt="sunset" class="sunset">
+        </div>  
+    </section>
+
+    <section  class="about" id="about">
+        <div class="about-img">
+            <img src="images_new/1705582247697.jpg" alt="about-img">
+        </div>
+        <div class="about-description">
+            <h2>About<span>Me</span></h2>
+            <h4>Computer Engineer!</h4>
+            <p>
+                I am a passionate and detail-oriented computer engineer, 
+                driven by a deep fascination for technology and its transformative potential. 
+                With a solid foundation in computer science and engineering, 
+                I specialize in developing innovative solutions that 
+                bridge the gap between complex challenges and elegant solutions. 
+                My journey in the field has equipped me with a diverse skill set, 
+                ranging from software development to hardware design. 
+                Whether it's coding efficient algorithms, designing intuitive user interfaces, 
+                or optimizing system performance, I approach every task with 
+                a commitment to excellence. I thrive in dynamic and collaborative 
+                environments, where I can leverage my problem-solving skills and 
+                creativity to contribute meaningfully. Constantly staying updated 
+                with the latest industry trends, I am dedicated to lifelong learning 
+                and continuous improvement. My goal is to contribute to advancements 
+                in technology that positively impact individuals and society as a whole.
+            </p>
+
+            <a href="#" class="button-more">More About Me ...</a> 
+        </div>
+
+
+    </section>
+
+    <section class="services" id="services">
+           <div class="container">
+                <h1 class="title-heading">My <span>Services</span></h1>
+                <div class="services-list">
+                   <div>
+                        <i class='bx bxl-android bx-flip-horizontal' style='color:rgb(70, 69, 136)'  ></i>
+                        <h3>Frontend</h3>
+                        <p>I specialize in crafting visually appealing and highly interactive user 
+                            interfaces that elevate the overall user experience. 
+                            With expertise in HTML, CSS, and JavaScript, 
+                            I focus on translating design concepts into 
+                            seamless and responsive web applications. </p>
+                        <a href="#" class="learn-more">Learn More...</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-android bx-flip-horizontal' style='color:rgb(70, 69, 136)'  ></i>
+                        <h3>Machine Learning</h3>
+                        <p>I am a dedicated machine learning enthusiast with 
+                            a passion for unraveling the complexities of data 
+                            and creating intelligent systems. Armed with a 
+                            solid foundation in statistical analysis, 
+                            algorithm development, and data manipulation, 
+                             </p>
+                        <a href="#"class="learn-more">Learn More...</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-android bx-flip-horizontal' style='color:rgb(70, 69, 136)'  ></i>
+                        <h3>UI/UX</h3>
+                        <p>I am a creative and detail-oriented professional 
+                            specializing in UI/UX design, where my passion 
+                            lies in crafting seamless user experiences.
+                             With a keen eye for aesthetics and a deep 
+                             understanding of user behavior, I excel in 
+                             translating complex concepts into 
+                             visually appealing interfaces. </p>
+                        <a href="#"class="learn-more">Learn More...</a>
+                    </div>
+                </div>
+           </div>
+    </section>
+    <h1 class="title-heading" style="margin-top: 80px">My <span>Skills</span></h1>
+
+    <section class="skill-section" id="skill-section">
+        <div class="container1" id="skills"> 
+            <h1 class="heading" >Technical Skills</h1>
+            <div class="technical-skills">
+                <div class="skill-bar">
+                    <i class='bx bxl-html5' style="color: #ca5a2a"></i>
+                    <div class="skill">
+                        <span>HTML</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-progress" per="90%" style="max-width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class='bx bxl-css3' style="color: rgb(41, 38, 168)"></i>
+                    <div class="skill">
+                        <span>CSS</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-progress" per="90%" style="max-width: 90%" ></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class='bx bxl-javascript' style="color:rgb(189, 201, 24)" ></i>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-progress" per="70%" style="max-width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class='bx bxl-python' style="color: #c32ec9" ></i>
+                    <div class="skill">
+                        <span>Python</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-progress"per="60%" style="max-width: 60%"></div>
+                    </div>
+                </div> 
+
+                <div class="skill-bar">
+                    <i class='bx bxl-react' style="color: rgb(41, 38, 168)"></i>
+                    <div class="skill">
+                        <span>React</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-progress" per="50%" style="max-width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <i class='bx bxl-postgresql' style="color:rgb(29, 29, 175)"></i>
+                    <div class="skill">
+                        <span>SQL</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-progress" per="65%" style="max-width: 65%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <h1 class="heading-edu">My <span>Education</span></h1>
+    
+    <section class="education-section" id=education-section>
+        <div class="education-items">
+            <div class="education-lvl">
+                <div class="dot"></div>  
+                <div class="date">2005-2015</div>
+                <div class="edu-content">
+                    <h3>Schooling</h3>
+                    <p>
+                        Education is a cornerstone of personal and societal development,
+                        providing individuals with the knowledge, skills, and perspectives
+                        needed to navigate and contribute to the world. It encompasses formal 
+                        learning experiences in schools, colleges, and universities, 
+                        as well as informal learning throughout one's life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="education-lvl">
+                <div class="dot"></div>  
+                <div class="date">2017-2019</div>
+                <div class="edu-content">
+                    <h3>High School</h3>
+                    <p>
+                        Education is a cornerstone of personal and societal development,
+                        providing individuals with the knowledge, skills, and perspectives
+                        needed to navigate and contribute to the world. It encompasses formal 
+                        learning experiences in schools, colleges, and universities, 
+                        as well as informal learning throughout one's life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="education-lvl">
+                <div class="dot"></div>  
+                <div class="date">2020-2024</div>
+                <div class="edu-content">
+                    <h3>Bachelor</h3>
+                    <p>
+                        Education is a cornerstone of personal and societal development,
+                        providing individuals with the knowledge, skills, and perspectives
+                        needed to navigate and contribute to the world. It encompasses formal 
+                        learning experiences in schools, colleges, and universities, 
+                        as well as informal learning throughout one's life.
+                    </p>
+                </div>
+            </div>
+
+            <div class="education-lvl">
+                <div class="dot"></div>  
+                <div class="date">2025-2027</div>
+                <div class="edu-content">
+                    <h3>Masters</h3>
+                    <p>
+                        Education is a cornerstone of personal and societal development,
+                        providing individuals with the knowledge, skills, and perspectives
+                        needed to navigate and contribute to the world. It encompasses formal 
+                        learning experiences in schools, colleges, and universities, 
+                        as well as informal learning throughout one's life.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <h1 class="heading-project">My <span>Projects</span></h1>
+
+    <section class="project-section" id="project-section">
+        <div class="project-header">
+            <h2>Latest<span>Project</span></h2>
+            <div class="project-content">
+
+                <div class="row">
+                    <img src="images/1681150393259.jpeg" alt="project">
+                    <div class="row-content">
+                        <h5>UI Design</h5>
+                        <p>
+                            User Interface (UI) design is a critical
+                            aspect of creating digital products that
+                            provide a seamless and engaging user experience. 
+                            It involves the design of visual elements, 
+                            interactions, and overall layout to enhance 
+                            usability and aesthetic appeal</p>
+
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <img src="images/portfolio-website.png" alt="project">
+                    <div class="row-content">
+                        <h5>Web App</h5>
+                        <p>
+                            A web application designed for collaboration 
+                            and chat serves as a dynamic platform, fostering 
+                            seamless communication and teamwork across diverse
+                             environments. These applications often feature 
+                             real-time messaging capabilities, enabling 
+                             instant interaction and collaboration among users, 
+                             regardless of geographical locations. 
+                        </p>
+
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="images/webp.jpg" alt="project">
+                    <div class="row-content">
+                        <h5>TB Detection</h5>
+                        <p>
+                            Tuberculosis (TB) detection involves various
+                             diagnostic methods aimed at identifying the 
+                             presence of Mycobacterium tuberculosis, 
+                             the bacterium responsible for causing TB. 
+                             Traditional approaches include sputum smear
+                              microscopy, where a patient's respiratory 
+                              secretions are examined under a microscope 
+                              for the presence of TB bacteria.
+                        </p>
+
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <div class="contact">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+
+            <p>Design is a critical
+                aspect of creating digital products that
+                provide a seamless and engaging user experience. 
+                It involves the design of visual elements, 
+                interactions</p>
+            
+            <div class="contact-access">
+                <li><i class='bx bx-mail-send' ></i>manishgyawali@gmail.com</li>
+                <li><i class='bx bxs-phone-call' ></i>9842397932</li>
+            </div>
+
+            <div class="contact-here">
+                   <a href="https://www.facebook.com/manish.gyawali.39"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/manish_gyawali01/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/manish-gyawali-690366286/"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/Mansish01"><i class='bx bxl-github' ></i></a>
+
+
+            </div>
+        </div>
+        
+        <div class="contact-input">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Subject" >
+
+                <textarea name="" id="" cols="30" rows="10" 
+                    placeholder="Enter Your Message"></textarea>
+                
+                <input type="submit" value="submit" class="submit-btn">
+            </form>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <p>Developed By Manish Gyawali &copy 2023</p>
+    </div>
+
+    <a href="#" class="tothetop"><i class='bx bx-up-arrow-alt'></i></a>
+
+
+
+
+    <script src="main.js"></script> 
+
+</body>
+</html>
