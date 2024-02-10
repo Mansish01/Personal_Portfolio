@@ -193,14 +193,14 @@
     border-radius: 3px;
     
 }
-
+/* 
 .bar div{
     height: 10px;
     background:rgb(61, 4, 126) ;
     border-radius: 3px;
     position: relative;
     animation: fillbar 2s ;
-}
+} */
 
 .bar div::before{
     content: attr(per);
